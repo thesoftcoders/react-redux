@@ -11,11 +11,13 @@ environment running.
 
 Open the file in terminal/any file editor / IDE & run the following commands.
 
-    npm install / yarn
+    `npm install` 
 
 after the dependencies are installed run
 
-    yarn run dev / yarn start / npm start
+    `yarn run dev` 
+    `yarn start` 
+    `npm start`
 
 ## Built With
 
@@ -24,6 +26,6 @@ after the dependencies are installed run
 - [Material UI](https://mui.com/) - Used for UI components & customization.
 - [Redux + Redux toolkit](https://redux-toolkit.js.org/) - Used for state management.
 
-## Authors
 
-- ** Sai Krisha @webmaverickTheSoftCoders ** - _Developed the frontend_
+
+
