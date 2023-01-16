@@ -11,13 +11,13 @@ environment running.
 
 Open the file in terminal/any file editor / IDE & run the following commands.
 
-    `npm install` 
+`npm install` 
 
 after the dependencies are installed run
 
-    `yarn run dev` 
-    `yarn start` 
-    `npm start`
+`yarn run dev` 
+`yarn start` 
+`npm start`
 
 ## Built With
 
