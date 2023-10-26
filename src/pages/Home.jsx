@@ -135,7 +135,7 @@ const Home = () => {
               </Container>
             ))}
           </Card>
-          <Container width="85%" Mwidth="100%">
+          <Container width="85%" mwidth="100%">
             <PostCard onClick={handleCommentModalOpen}>
               <Container
                 direction="row"
@@ -166,25 +166,25 @@ const Home = () => {
                 <Container
                   direction="row"
                   width="15%"
-                  Mwidth="28%"
+                  mwidth="28%"
                   justify="space-between"
                   Mjustify="space-between"
                 >
                   <ImageAvatar
                     width="20px"
-                    Mheight="28px"
-                    Mwidth="22px"
+                    mheight="28px"
+                    mwidth="22px"
                     src={PostBuyIcon}
                   />
                   <ImageAvatar
                     width="15px"
                     height="20px"
-                    Mwidth="16px"
-                    Mheight="22px"
+                    mwidth="16px"
+                    mheight="22px"
                     src={PostBookmark}
                   />
                   <ImageAvatar
-                    Mwidth="5px"
+                    mwidth="5px"
                     width="6px"
                     height="20px"
                     src={PostMenu}
@@ -218,7 +218,7 @@ const Home = () => {
                   <Text5>12</Text5>
                 </Container>
                 <Container direction="row">
-                  <ImageAvatar height="20px" Mwidth="25px" src={Repost} />
+                  <ImageAvatar height="20px" mwidth="25px" src={Repost} />
                   <Text5>12</Text5>
                 </Container>
                 <Container direction="row">
@@ -257,25 +257,25 @@ const Home = () => {
                 <Container
                   direction="row"
                   width="15%"
-                  Mwidth="28%"
+                  mwidth="28%"
                   justify="space-between"
                   Mjustify="space-between"
                 >
                   <ImageAvatar
                     width="20px"
-                    Mheight="28px"
-                    Mwidth="22px"
+                    mheight="28px"
+                    mwidth="22px"
                     src={PostBuyIcon}
                   />
                   <ImageAvatar
                     width="15px"
                     height="20px"
-                    Mwidth="16px"
-                    Mheight="22px"
+                    mwidth="16px"
+                    mheight="22px"
                     src={PostBookmark}
                   />
                   <ImageAvatar
-                    Mwidth="5px"
+                    mwidth="5px"
                     width="6px"
                     height="20px"
                     src={PostMenu}
@@ -309,7 +309,7 @@ const Home = () => {
                   <Text5>12</Text5>
                 </Container>
                 <Container direction="row">
-                  <ImageAvatar height="20px" Mwidth="25px" src={Repost} />
+                  <ImageAvatar height="20px" mwidth="25px" src={Repost} />
                   <Text5>12</Text5>
                 </Container>
                 <Container direction="row">
@@ -348,25 +348,25 @@ const Home = () => {
                 <Container
                   direction="row"
                   width="15%"
-                  Mwidth="28%"
+                  mwidth="28%"
                   justify="space-between"
                   Mjustify="space-between"
                 >
                   <ImageAvatar
                     width="20px"
-                    Mheight="28px"
-                    Mwidth="22px"
+                    mheight="28px"
+                    mwidth="22px"
                     src={PostBuyIcon}
                   />
                   <ImageAvatar
                     width="15px"
                     height="20px"
-                    Mwidth="16px"
-                    Mheight="22px"
+                    mwidth="16px"
+                    mheight="22px"
                     src={PostBookmark}
                   />
                   <ImageAvatar
-                    Mwidth="5px"
+                    mwidth="5px"
                     width="6px"
                     height="20px"
                     src={PostMenu}
@@ -400,7 +400,7 @@ const Home = () => {
                   <Text5>12</Text5>
                 </Container>
                 <Container direction="row">
-                  <ImageAvatar height="20px" Mwidth="25px" src={Repost} />
+                  <ImageAvatar height="20px" mwidth="25px" src={Repost} />
                   <Text5>12</Text5>
                 </Container>
                 <Container direction="row">

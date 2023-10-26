@@ -41,7 +41,7 @@ export const Container = styled.div`
   @media screen and (max-width: 576px) {
     flex-wrap: ${({ wrap }) => (wrap ? wrap : "")};
     justify-content: ${({ Mjustify }) => (Mjustify ? Mjustify : "center")};
-    width: ${({ Mwidth }) => (Mwidth ? Mwidth : "")};
+    width: ${({ mwidth }) => (mwidth ? mwidth : "")};
   }
 `;
 
@@ -77,8 +77,8 @@ export const ImageAvatar = styled.img`
   transition: all ease-in-out 0.3s;
   @media screen and (max-width: 576px) {
     display: ${({ Mdisplay }) => (Mdisplay ? Mdisplay : "block")};
-    height: ${({ Mheight }) => (Mheight ? Mheight : "20px")};
-    width: ${({ Mwidth }) => (Mwidth ? Mwidth : "20px")};
+    height: ${({ mheight }) => (mheight ? mheight : "20px")};
+    width: ${({ mwidth }) => (mwidth ? mwidth : "20px")};
   }
 `;
 
@@ -108,29 +108,26 @@ export const UserAvatarContainer = styled(IconButton)`
   position: relative;
   padding: 1px !important;
   background: ${({ theme, trending }) =>
-      `linear-gradient(${
-        trending
-          ? "#252849,#252849"
-          : `${theme.avatarPaddingColor}, ${theme.avatarPaddingColor}`
-      }) padding-box`},
+    `linear-gradient(${trending
+      ? "#252849,#252849"
+      : `${theme.avatarPaddingColor}, ${theme.avatarPaddingColor}`
+    }) padding-box`},
     ${({ bc, theme, trending }) =>
-        bc
-          ? `${
-              trending
-                ? "linear-gradient(#404573,#404573)"
-                : "linear-gradient(45deg,rgba(58, 122, 237, 1),rgba(120, 35, 183, 1))"
-            }`
-          : `${
-              trending
-                ? "linear-gradient(#404573,#404573)"
-                : theme.avatarBorderColor
-            }`}
+    bc
+      ? `${trending
+        ? "linear-gradient(#404573,#404573)"
+        : "linear-gradient(45deg,rgba(58, 122, 237, 1),rgba(120, 35, 183, 1))"
+      }`
+      : `${trending
+        ? "linear-gradient(#404573,#404573)"
+        : theme.avatarBorderColor
+      }`}
       border-box !important;
   border-radius: 50%;
   border: 3px solid transparent !important;
   @media screen and (max-width: 576px) {
-    height: ${({ Mheight }) => (Mheight ? Mheight : "auto")};
-    width: ${({ Mwidth }) => (Mwidth ? Mwidth : "auto")};
+    height: ${({ mheight }) => (mheight ? mheight : "auto")};
+    width: ${({ mwidth }) => (mwidth ? mwidth : "auto")};
   }
 `;
 
@@ -138,8 +135,8 @@ export const UserAvatar = styled(Avatar)`
   height: ${({ height }) => (height ? height : "35px !important")};
   width: ${({ width }) => (width ? width : "35px !important")};
   @media screen and (max-width: 576px) {
-    height: ${({ Mheight }) => (Mheight ? Mheight : "40px")};
-    width: ${({ Mwidth }) => (Mwidth ? Mwidth : "40px")};
+    height: ${({ mheight }) => (mheight ? mheight : "40px")};
+    width: ${({ mwidth }) => (mwidth ? mwidth : "40px")};
   }
 `;
 

@@ -28,7 +28,7 @@ const Footer = ({ position, bottom }) => {
         <Container>
           <NavbarLinks mb="8px">Factzz © Copyright 2022</NavbarLinks>
         </Container>
-        <Container direction="row" Mjustify="space-around" Mwidth="100%">
+        <Container direction="row" Mjustify="space-around" mwidth="100%">
           <Container direction="row">
             <ImageAvatar src={globe} height="16px" width="16px" br="50%" />
             <NavbarLinks cursor="pointer">English</NavbarLinks>
@@ -40,7 +40,7 @@ const Footer = ({ position, bottom }) => {
           <CustomDivider orientation="vertical" flexItem />
           <NavbarLinks cursor="pointer">Contact</NavbarLinks>
         </Container>
-        <Container direction="row" Mjustify="space-around" Mwidth="75%">
+        <Container direction="row" Mjustify="space-around" mwidth="75%">
           <NavbarLinks cursor="pointer">Privacy Policy</NavbarLinks>
           <CustomDivider orientation="vertical" flexItem />
           <NavbarLinks cursor="pointer">Terms of Use</NavbarLinks>

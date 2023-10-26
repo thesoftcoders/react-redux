@@ -62,7 +62,7 @@ import LogoutIcon from "@mui/icons-material/Logout";
 import { useNavigate } from "react-router-dom";
 import { setThemeMode } from "../../redux/ThemeModeReducer";
 import { isMobile } from "react-device-detect";
-import { Inbox, Mail } from "@mui/icons-material";
+import { setUserAuthentication } from "../../redux/UserReducer";
 
 const TopNav = () => {
   const [anchorEl, setAnchorEl] = useState(null);
@@ -117,7 +117,7 @@ const TopNav = () => {
         direction="row"
         justify="space-between"
         width="95%"
-        Mwidth="100%"
+        mwidth="100%"
       >
         <Container direction="row">
           <Breadcrumb aria-label="breadcrumb">
@@ -165,8 +165,8 @@ const TopNav = () => {
           <ImageAvatar
             height="30px"
             width="25px"
-            Mheight="25px"
-            Mwidth="22px"
+            mheight="25px"
+            mwidth="22px"
             src={mode === "light" ? NotificationIcon : NotificationDarkIcon}
           />
           <Container direction="row" onClick={handleClick}>
@@ -178,8 +178,8 @@ const TopNav = () => {
               src={DownArrowIcon}
               r={rotateDirection}
             />
-            <UserAvatarContainer>
-              <UserAvatar onClick={toggleDrawer(true)} src={Img1} />
+            <UserAvatarContainer onClick={toggleDrawer(true)}>
+              <UserAvatar src={Img1} />
             </UserAvatarContainer>
           </Container>
           {isMobile ? (
@@ -294,7 +294,13 @@ const TopNav = () => {
                   </ListItemIcon>
                   Settings
                 </CustomMenuItem>
-                <CustomMenuItem sx={{ padding: 0, minHeight: "30px" }}>
+                <CustomMenuItem
+                  onClick={() => {
+                    dispatch(setUserAuthentication({ isAuthenticated: false }));
+                    navigate("/");
+                  }}
+                  sx={{ padding: 0, minHeight: "30px" }}
+                >
                   <ListItemIcon sx={{ justifyContent: "center" }}>
                     <LogoutIcon
                       sx={{
@@ -413,8 +419,8 @@ const TopNav = () => {
             </Menu>
           )}
           <UserAvatarContainer
-            Mheight="1.5rem"
-            Mwidth="1.5rem"
+            mheight="1.5rem"
+            mwidth="1.5rem"
             onClick={changeThemeHandler}
           >
             {mode === "light" ? (

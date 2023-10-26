@@ -1,26 +1,26 @@
 import React from "react";
 import {
   BackgroundOverlay,
-  BottomNavbar,
   Container,
   CustomDivider,
   FormContainer,
   FormWrapper,
   Image,
-  ImageAvatar,
-  NavbarLinks,
   Text,
   Title,
 } from "../components/Styles/StyledUIComponents";
 import backgroundImage from "../assets/images/bg.png";
-import globe from "../assets/images/globe.png";
 import logo from "../assets/images/logo.png";
-import { Divider } from "@mui/material";
 import LoginForm from "../components/forms/LoginForm";
 import Footer from "../components/footer/Footer";
+import { useSelector } from "react-redux";
+import { Navigate, useLocation } from "react-router-dom";
 
 const Authentication = () => {
-  return (
+  const { user } = useSelector((state) => state.user);
+  const location = useLocation();
+
+  return !user.isAuthenticated ? (
     <BackgroundOverlay imageUrl={backgroundImage}>
       <FormWrapper>
         <FormContainer>
@@ -42,6 +42,8 @@ const Authentication = () => {
       </FormWrapper>
       <Footer position="absolute" bottom="0" />
     </BackgroundOverlay>
+  ) : (
+    <Navigate to="/" replace state={{ from: location }} />
   );
 };
 

@@ -89,7 +89,7 @@ const LoginForm = () => {
                 width="80%"
                 justify="space-between"
                 Mjustify="space-around"
-                Mwidth="100%"
+                mwidth="100%"
                 m="1rem 0"
               >
                 <Container direction="row">
